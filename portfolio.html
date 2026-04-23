@@ -1,117 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-    <nav class="bg-gray-900 text-white">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="flex justify-between items-center h-16">
-                <h1 class="text-xl font-bold">My Portfolio</h1>
-                <ul class="flex space-x-6">
-                    <li><a href="#about-me" class="hover:text-yellow-400">About Me</a></li>
-                    <li><a href="#skills" class="hover:text-yellow-400">Skills</a></li>
-                    <li><a href="#projects" class="hover:text-yellow-400">Projects</a></li>
-                    <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+    <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skill">Skill</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown link
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <section class="font-['Times_New_Roman']" id="about-me">
-        <div class="flex flex-row">
-            <div class="w-1/2 h-screen pt-[25vh]">
-                <h1 class="font-bold text-6xl ml-20">Hallo, I am vel 👋</h1>
-                <p class="p-5 text-2xl ml-5">
-                    Full-stack web developer specializing in complete web application
-                    development.Focused on performance🚀, scalability 📈, and great user experience.
+    <div class="container">
+        <div class="row pt-5 align-items-center">
+            <div class="col">
+                <h1>Hi all, I'm Saad</h1>
+                <p>
+                    A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile
+                    applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and
+                    frameworks.
                 </p>
-                <div class="flex ml-20 mt-10 space-x-10 pl-[20vh]">
-                    <a href="https://github.com/vels75300-stack/intership-practices">
-                        <img src="github.png" width="50" height="50" class="mt-2">
-                    </a>
-                    <a href="https://www.linkedin.com/checkpoint/challenge/...">
-                        <img src="linkedin.png" width="50" height="50" class="mt-2">
-                    </a>
-                    <a href="https://mail.google.com/mail">
-                        <img src="gmail.jpeg" width="75" height="75">
-                    </a>
-                </div>
+
             </div>
-            <div class="w-1/2">
-                <img src="giphy.gif" class="pt-[10vh] pl-[20vh] ">
+            <div class="col">
+                <img src="about.avif" alt="Saad's Profile Picture"
+                    class="img-fluid rounded-circle">
             </div>
         </div>
-    </section>
-    <section class="font-['Times_New_Roman']" id="skills">
-        <div class="flex flex-row">
-            <div class="w-1/2">
-                <img src="web design skill.gif" class="mt-20">
+        <div class="row" id="skill">
+            <div class="col">
+                <img src="skill.gif" alt="Saad's Profile Picture"
+                    class="img-fluid rounded-circle">
             </div>
-            <div class="w-1/2">
-                <h1 class="font-bold text-6xl ml-20">What I Do ?</h1>
-                <div class="flex gap-6 text-6xl pt-[10vh] ml-5">
-                    <link rel="stylesheet" type='text/css'
-                        href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-                    <i class="devicon-html5-plain colored"></i>
-                    <i class="devicon-css3-plain colored"></i>
-                    <i class="devicon-bootstrap-plain colored"></i>
-                    <i class="devicon-tailwindcss-plain colored"></i>
-                    <i class="devicon-photoshop-plain colored"></i>
-                    <i class="devicon-canva-plain colored"></i>
-                    <i class="devicon-mysql-plain colored"></i>
-                </div>
-                <div class="pt-[5vh] m-5 text-2xl">
-                    <h3>⚡ Full stack Web developer</h3>
-                    <h3 class="mt-2">⚡ UI/UX Design</h3>
-                    <h3 class="mt-2">⚡ Video Editing</h3>
-                </div>
+            <div class="col">
+                <h1>
+                    What I do
+                </h1>
             </div>
         </div>
-    </section>
-    <section class="font-['Times_New_Roman']" id="projects">
-        <div>
-            <h1 class="font-bold text-6xl pt-[20vh] pl-[10vh] mb-10">
-                My Projects
-            </h1>
-            <div class="flex justify-center w-full flex-wrap">
-                <div class="w-[300px] p-2 border rounded shadow m-5 hover:shadow-xl hover:scale-105 transition duration-300">
-                    <h5 class="text-2xl font-bold p-4">College ERP System</h5>
-                    <p>⚡ A College ERP System streamlines academic and administrative processes.</p>
-                </div>
-                <div class="w-[300px] p-2 border rounded shadow m-5 hover:shadow-xl hover:scale-105 transition duration-300">
-                    <h5 class="text-2xl font-bold p-4">E-commerce</h5>
-                    <p>⚡ Buy and sell products online with cart and payments.</p>
-                </div>
-                <div class="w-[300px] p-2 border rounded shadow m-5 hover:shadow-xl hover:scale-105 transition duration-300">
-                    <h5 class="text-2xl font-bold p-4">Student Management System</h5>
-                    <p>⚡ Manage student data, attendance, and grades easily.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="flex flex-row">
-            <div class="font-['Times_New_Roman'] w-1/2">
-                <h1 class="font-bold text-7xl pt-[10vh] pl-[140vh] mb-10">contact</h1>
-                <div class="mt-[10vh] ml-[20vh] text-2xl">
-                    <h3> 🧑🏻‍💼 Vel Murugan S</h3>
-                    <h3 class="mt-2">✉️ Gmail : vels7094@gmail.com</h3>
-                    <h3 class="mt-2">☎️ Phone : 1234567890 </h3>
-                    <h3 class="mt-2">🏢 Address : XXXXXXXXXXXXXXXXXX</h3>
-                </div>
-            </div>
-            <div class="w-1/2 flex justify-center items-center">
-                <img src="WhatsApp Image 2026-04-22 at 9.36.32 PM.jpeg" class="w-244 h-24 rounded-full object-cover mt-[20vh]" >
-            </div>
-        </div>
-    </section>
-    <div class="pt-[10vh]">
-        <footer class="flex justify-center p-5 bg-black text-white">
-            <p>© 2026 My Portfolio</p>
-        </footer>
     </div>
 </body>
+
 </html>
